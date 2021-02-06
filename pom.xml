@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<modelVersion>4.0.0</modelVersion>
+<parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.2.4.RELEASE</version>
+    <relativePath/> <!-- lookup parent from repository -->
+</parent>
+<groupId>org.example</groupId>
+<artifactId>MyFristProject</artifactId>
+<version>1.0-SNAPSHOT</version>
+<name>MyFirstProject</name>
+<packaging>jar</packaging>
+<!--    <repositories>-->
+<!--        <repository>-->
+<!--            <id>1_maven.apache.org</id>-->
+<!--            <releases>  <enabled>true</enabled>  </releases>-->
+<!--            <snapshots> <enabled>false</enabled> </snapshots>-->
+<!--            <url>https://repo.maven.apache.org/maven2</url>-->
+<!--            <layout>default</layout>-->
+<!--        </repository>-->
+<!--        <repository>-->
+<!--            <id>2_maven.repository.com</id>-->
+<!--            <releases>  <enabled>true</enabled>  </releases>-->
+<!--            <snapshots> <enabled>false</enabled> </snapshots>-->
+<!--            <url>https://mavenrepository.com</url>-->
+<!--            <layout>default</layout>-->
+<!--        </repository>-->
+<!--    </repositories>-->
+
+<description>Demo project for Spring Boot</description>
+
+<properties>
+    <java.version>1.8</java.version>
+</properties>
+
+<dependencies>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-data-jpa</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-mail</artifactId>
+        <version>2.1.9.RELEASE</version>
+    </dependency>
+
+
+    <dependency>
+        <groupId>org.postgresql</groupId>
+        <artifactId>postgresql</artifactId>
+        <scope>runtime</scope>
+    </dependency>
+
+
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-test</artifactId>
+        <scope>test</scope>
+        <exclusions>
+            <exclusion>
+                <groupId>org.junit.vintage</groupId>
+                <artifactId>junit-vintage-engine</artifactId>
+            </exclusion>
+        </exclusions>
+    </dependency>
+
+    <!--       new Dependencies Start
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-data-ldap</artifactId>
+        <version>2.0.1.RELEASE</version>
+    </dependency>
+
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-ldap</artifactId>
+            <version>4.2.3.RELEASE</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-ldap</artifactId>
+            <version>2.2.4.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.unboundid</groupId>
+            <artifactId>unboundid-ldapsdk</artifactId>
+            <version>4.0.5</version>
+        </dependency>
+
+        -->
+
+    <!-- https://mvnrepository.com/artifact/com.sun.jndi/ldap -->
+    <!--        <dependency>-->
+    <!--            <groupId>com.sun.jndi</groupId>-->
+    <!--            <artifactId>ldap</artifactId>-->
+    <!--            <version>1.2.4</version>-->
+    <!--        </dependency>-->
+
+    <!--       new Dependencies End -->
+</dependencies>
+
+<build>
+    <finalName>MySecondProject</finalName>
+    <plugins>
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+        </plugin>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-resources-plugin</artifactId>
+            <version>2.6</version>
+        </plugin>
+
+    </plugins>
+</build>
+
+</project>
